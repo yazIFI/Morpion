@@ -1,0 +1,40 @@
+﻿La génération a démarré 03/12/2014 09:48:14.
+     1>Projet "C:\Users\yazide\Desktop\S1\Resolution\Morpion\Morpion\Morpion.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\yazide\Desktop\S1\Resolution\Morpion\include /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AlphaBeta.cpp Case.cpp Grille.cpp main.cpp MiniMax.cpp MyControlEngine.cpp MyGameEngine.cpp MyGraphicEngine.cpp Random.cpp
+         AlphaBeta.cpp
+         Case.cpp
+         Grille.cpp
+     1>Grille.cpp(37): warning C4018: '<' : incompatibilité signed/unsigned
+         main.cpp
+     1>c:\users\yazide\desktop\s1\resolution\morpion\morpion\MyGameEngine.h(21): warning C4520: 'MyGameEngine' : plusieurs constructeurs par défaut spécifiés
+         MiniMax.cpp
+         MyControlEngine.cpp
+     1>c:\users\yazide\desktop\s1\resolution\morpion\morpion\MyGameEngine.h(21): warning C4520: 'MyGameEngine' : plusieurs constructeurs par défaut spécifiés
+         MyGameEngine.cpp
+     1>c:\users\yazide\desktop\s1\resolution\morpion\morpion\MyGameEngine.h(21): warning C4520: 'MyGameEngine' : plusieurs constructeurs par défaut spécifiés
+         MyGraphicEngine.cpp
+         Random.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\yazide\Desktop\S1\Resolution\Morpion\Release\Morpion.exe" /NOLOGO /LIBPATH:C:\Users\yazide\Desktop\S1\Resolution\Morpion\libWin engine.lib glut32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\yazide\Desktop\S1\Resolution\Morpion\Release\Morpion.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\yazide\Desktop\S1\Resolution\Morpion\Release\Morpion.lib" /MACHINE:X86 /SAFESEH Release\AlphaBeta.obj
+         Release\Case.obj
+         Release\Grille.obj
+         Release\main.obj
+         Release\MiniMax.obj
+         Release\MyControlEngine.obj
+         Release\MyGameEngine.obj
+         Release\MyGraphicEngine.obj
+         Release\Random.obj
+         Génération de code en cours
+         Fin de la génération du code
+     1>engine.lib(GraphicPrimitives.obj) : warning LNK4099: PDB 'vc120.pdb' n'a pu être trouvé avec 'engine.lib(GraphicPrimitives.obj)' ou sur 'C:\Users\yazide\Desktop\S1\Resolution\Morpion\Release\vc120.pdb' ; l'objet sera lié sans informations de débogage
+     1>engine.lib(Engine.obj) : warning LNK4099: PDB 'vc120.pdb' n'a pu être trouvé avec 'engine.lib(Engine.obj)' ou sur 'C:\Users\yazide\Desktop\S1\Resolution\Morpion\Release\vc120.pdb' ; l'objet sera lié sans informations de débogage
+     1>engine.lib(GameEngine.obj) : warning LNK4099: PDB 'vc120.pdb' n'a pu être trouvé avec 'engine.lib(GameEngine.obj)' ou sur 'C:\Users\yazide\Desktop\S1\Resolution\Morpion\Release\vc120.pdb' ; l'objet sera lié sans informations de débogage
+     1>engine.lib(GraphicEngine.obj) : warning LNK4099: PDB 'vc120.pdb' n'a pu être trouvé avec 'engine.lib(GraphicEngine.obj)' ou sur 'C:\Users\yazide\Desktop\S1\Resolution\Morpion\Release\vc120.pdb' ; l'objet sera lié sans informations de débogage
+     1>engine.lib(ControlEngine.obj) : warning LNK4099: PDB 'vc120.pdb' n'a pu être trouvé avec 'engine.lib(ControlEngine.obj)' ou sur 'C:\Users\yazide\Desktop\S1\Resolution\Morpion\Release\vc120.pdb' ; l'objet sera lié sans informations de débogage
+         Morpion.vcxproj -> C:\Users\yazide\Desktop\S1\Resolution\Morpion\Release\Morpion.exe
+     1>Génération du projet "C:\Users\yazide\Desktop\S1\Resolution\Morpion\Morpion\Morpion.vcxproj" terminée (Build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:11.00
