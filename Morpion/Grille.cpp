@@ -4,9 +4,10 @@ using namespace std;
 
 bool Grille::isAgoodChoice = true;
 
-Grille::~Grille(){}
+
 bool wedrawed = false;
-int indexi=0, indexj=0;
+bool wefill = false;
+int indexi=1, indexj=1;
 void Grille::draw(std::vector<Case * > *cases){
 	/*pour eviter de redessiner a chaque fois*/
 	if (wedrawed == false){
@@ -16,20 +17,16 @@ void Grille::draw(std::vector<Case * > *cases){
 		float g = 0.5;
 		float b = 0.5;
 		float cote = (2.0 / nb);
-		for (int i = 0; i <= nb; i++){
-			for (int j = 0; j <= nb; j++){
+		for (int i = 0; i < nb; i++){
+			tempY -= cote;
+			for (int j = 0; j < nb; j++){
 				indexj++;
 				cases->push_back(new Case(tempX, tempY, cote-0.01, cote-0.01, r, g, b,indexi,indexj));
-				//if (r == 0.0){ r = 0.5; g = 0.5; b = 0.5; }
-				//else { r = 0.0;/* g = 1.0; b = 1.0;*/ }
 				tempX += cote;
 			}
 			indexj = 0;
 			indexi++;
 			tempX = -1.0;
-			tempY -= cote;
-		//	if (r == 0.0){ r = 0.5; g = 0.5; b = 0.5; }
-			//else { r = 0.0;/* g = 1.0; b = 1.0;*/ }
 		}
 		wedrawed = true;
 	}
@@ -42,19 +39,39 @@ void Grille::draw(std::vector<Case * > *cases){
 }
 
 
-void Grille::listCases(std::vector<Case *> *c){
-	if (c->size()>0){ c->clear(); }
-	float tempX = 1.0;
-	float tempY = 1.0;
-	for (int i = 0; i < 10; i++){
-		for (int j = 0; j < 10; j++){
-			c->push_back(new Case(tempX, tempY, 0.0, 0.0, 0.0));
+void Grille::getListCases(std::vector<Case *> *c){
+	/*pour eviter de remplir a chaque fois*/
+	if (wefill == false){
+		if (c->size() <= 0){
+			float tempX = -1.0;
+			float tempY = 1.0;
+			float cote = (2.0 / nb);
+			cout << "nb :" << nb << endl;
+			for (int i = 0; i < nb; i++){
+				tempY -= cote;
+				tempX = -1.0;
+				for (int j = 0; j < nb; j++){
+					indexj++;
+					c->push_back(new Case(tempX, tempY, cote - 0.01, cote - 0.01, 0.0, 0.0, 0.0, indexi, indexj));
+					tempX += cote;
+				}
+				indexj = 0;
+				indexi++;
 
-			tempX -= 0.2;
+
+			}
 		}
-		tempX = 1.0;
-		tempY -= 0.2;
-
+		for (int i = 0; i < (nb*nb); i++){
+			listCases->push_back(0);
+		}
 	}
+	wefill = true;
+}
 
+	
+
+
+
+Grille::~Grille(){
+	delete listCases;
 }

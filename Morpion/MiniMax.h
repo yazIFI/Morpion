@@ -1,7 +1,7 @@
 #pragma once
 #include "TypePlay.h"
 
-class MiniMax : public TypePlay{
+class MiniMax{
 
 private:
 	int choicePlay;
@@ -12,5 +12,5 @@ public:
 	{}
 	int getChpoice();
 	void setChoice(int newChoice);
-	void play(std::vector<Case *> *listC);
+	void play();
 };

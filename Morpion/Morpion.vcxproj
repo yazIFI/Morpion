@@ -77,6 +77,7 @@
     <ClInclude Include="MyControlEngine.h" />
     <ClInclude Include="MyGameEngine.h" />
     <ClInclude Include="MyGraphicEngine.h" />
+    <ClInclude Include="PlayRandom.h" />
     <ClInclude Include="Random.h" />
     <ClInclude Include="TypePlay.h" />
   </ItemGroup>
@@ -89,6 +90,7 @@
     <ClCompile Include="MyControlEngine.cpp" />
     <ClCompile Include="MyGameEngine.cpp" />
     <ClCompile Include="MyGraphicEngine.cpp" />
+    <ClCompile Include="PlayRandom.cpp" />
     <ClCompile Include="Random.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
